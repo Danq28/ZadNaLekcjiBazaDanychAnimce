@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string-array name="gatunek">
+        <item>rom-kom</item>
+        <item>shounen</item>
+        <item>seinen</item>
+        <item>isekai</item>
+    </string-array>
 </resources>

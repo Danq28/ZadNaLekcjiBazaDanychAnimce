@@ -1,31 +1,31 @@
-package com.example.myapplication;
+    package com.example.myapplication;
 
-import androidx.room.ColumnInfo;
-import androidx.room.Entity;
-import androidx.room.PrimaryKey;
+    import androidx.room.ColumnInfo;
+    import androidx.room.Entity;
+    import androidx.room.PrimaryKey;
 
-@Entity(tableName = "anime")
-public class Anime {
-    @PrimaryKey(autoGenerate = true)
-    public int id;
+    @Entity(tableName = "anime")
+    public class Anime {
+        @PrimaryKey(autoGenerate = true)
+        public int id;
 
-    public String tytul;
+        public String tytul;
 
-    public String gatunek;
+        public String gatunek;
 
-    @ColumnInfo(name = "sredni_rating")
-    public float sredniRating;
+        @ColumnInfo(name = "sredni_rating")
+        public float sredniRating;
 
-    public boolean czyZakonczone;
+        public boolean czyZakonczone;
 
 
-    public Anime(String tytul, String gatunek, float sredniRating, boolean czyZakonczone) {
-        this.tytul = tytul;
-        this.gatunek = gatunek;
-        this.sredniRating = sredniRating;
-        this.czyZakonczone = czyZakonczone;
+        public Anime(String tytul, String gatunek, float sredniRating, boolean czyZakonczone) {
+            this.tytul = tytul;
+            this.gatunek = gatunek;
+            this.sredniRating = sredniRating;
+            this.czyZakonczone = czyZakonczone;
+        }
+
+        public Anime() {
+        }
     }
-
-    public Anime() {
-    }
-}

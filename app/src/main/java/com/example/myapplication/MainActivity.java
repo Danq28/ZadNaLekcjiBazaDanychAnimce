@@ -54,8 +54,11 @@ public class MainActivity extends AppCompatActivity {
                                 Integer.parseInt(editocena.getText().toString()),
                                 checkBox.isChecked()
                         );
-                        AnimeDataBase.w
+                        animeDataBase.zwrocAnimeDao().wstawDoBazy(anime);
+
                     }
                 }
+        );
     }
+
 }

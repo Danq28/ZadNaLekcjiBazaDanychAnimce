@@ -32,9 +32,9 @@
         @Override
         public String toString() {
             return
-                    "gatunek: " + gatunek +", "  +
-                    "tytul: " + tytul  +", "+
-                    "sredniRating: " + sredniRating +", "+
+                    "gatunek: " + gatunek +", "  +"\n"+
+                    "tytul: " + tytul  +", "+"\n"+
+                    "sredniRating: " + sredniRating +", "+"\n"+
                     "czyZakonczone: " + czyZakonczone;
                     };
         }

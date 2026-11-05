@@ -16,6 +16,7 @@ import android.widget.Spinner;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import java.util.List;
+import android.widget.AdapterView;
 public class MainActivity extends AppCompatActivity {
     private AnimeDataBase animeDataBase;
 
@@ -71,6 +72,19 @@ public class MainActivity extends AppCompatActivity {
                 android.R.layout.simple_list_item_1,
                 animelista);
         listView.setAdapter(arrayAdapter);
+
+
+        listView.setOnItemLongClickListener(
+                new AdapterView.OnItemLongClickListener() {
+                    @Override
+                    public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+                        animeDataBase.zwrocAnimeDao().usunZBazy(animelista.get(i));
+                        animelista.remove(i);
+                        arrayAdapter.notifyDataSetChanged();
+                        return false;
+                    }
+                }
+        );
     }
 
 }

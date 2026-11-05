@@ -13,6 +13,9 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import java.util.List;
 public class MainActivity extends AppCompatActivity {
     private AnimeDataBase animeDataBase;
 
@@ -20,6 +23,9 @@ public class MainActivity extends AppCompatActivity {
     private Spinner spinnergatunek;
     private CheckBox checkBox;
     private Button button;
+    private ListView listView;
+    private ArrayAdapter<Anime> arrayAdapter;
+    private List<Anime> animelista;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +65,12 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
         );
+        listView=findViewById(R.id.animelist);
+        animelista=animeDataBase.zwrocAnimeDao().zwrocWszystkieAnime();
+        arrayAdapter=new ArrayAdapter<>(MainActivity.this,
+                android.R.layout.simple_list_item_1,
+                animelista);
+        listView.setAdapter(arrayAdapter);
     }
 
 }

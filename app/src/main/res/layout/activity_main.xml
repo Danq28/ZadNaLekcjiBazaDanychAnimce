@@ -50,6 +50,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Dodaj do bazy" />
+
+        <ListView
+            android:id="@+id/animelist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

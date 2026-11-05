@@ -28,4 +28,14 @@
 
         public Anime() {
         }
-    }
+
+        @Override
+        public String toString() {
+            return
+                    "gatunek: " + gatunek +", "  +
+                    "tytul: " + tytul  +", "+
+                    "sredniRating: " + sredniRating +", "+
+                    "czyZakonczone: " + czyZakonczone;
+                    };
+        }
+

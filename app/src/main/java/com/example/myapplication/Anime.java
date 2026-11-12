@@ -37,5 +37,8 @@
                     "sredniRating: " + sredniRating +", "+"\n"+
                     "czyZakonczone: " + czyZakonczone;
                     };
+        public void add(Anime anime) {
         }
+        }
+
 

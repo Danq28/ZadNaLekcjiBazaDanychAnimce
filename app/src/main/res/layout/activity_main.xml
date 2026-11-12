@@ -51,6 +51,12 @@
             android:layout_height="wrap_content"
             android:text="Dodaj do bazy" />
 
+        <Button
+            android:id="@+id/buttonAktualizuj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Uaktualnij anime" />
+
         <ListView
             android:id="@+id/animelist"
             android:layout_width="match_parent"

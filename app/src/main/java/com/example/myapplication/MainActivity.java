@@ -72,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
                 android.R.layout.simple_list_item_1,
                 animelista);
         listView.setAdapter(arrayAdapter);
+        //
 
 
         listView.setOnItemLongClickListener(
